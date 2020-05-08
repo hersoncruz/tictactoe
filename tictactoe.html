@@ -1,46 +1,44 @@
-<link rel="stylesheet" type="text/css" href="./tictactoe.css">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>tictactoe</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+      </head>
 
-<div id="root">
+  <body>
+    <link rel="stylesheet" type="text/css" href="./tictactoe.css">
 
-</div>
+    <div id="root">
 
-<div class="status">
-  Next player: X
-</div>
-<div class="board">
-  <div class="board-row">
-    <button class="square">
-      X
-    </button>
-    <button class="square">
+    </div>
 
-    </button>
-    <button class="square">
-      O
-    </button>
-  </div>
+    <status id="status"></status>
+    <div class="board">
+      <div id="row1" class="board-row">
+        <square name="11" class=square></square>
+        <square name="12" class=square></square>
+        <square name="13" class=square></square>
+      </div>
 
-  <div class="board-row">
-    <button class="square">
+      <div id="row2" class="board-row">
+        <square name="21" class=square></square>
+        <square name="22" class=square></square>
+        <square name="23" class=square></square>
+      </div>
 
-    </button>
-    <button class="square">
-
-    </button>
-    <button class="square">
-
-    </button>
-  </div>
-
-  <div class="board-row">
-    <button class="square">
-
-    </button>
-    <button class="square">
-
-    </button>
-    <button class="square">
-
-    </button>
-  </div>
-</div>
+      <div id="row3" class="board-row">
+        <square name="31" class=square></square>
+        <square name="32" class=square></square>
+        <square name="33" class=square></square>
+      </div>
+    </div>
+<script type="text/javascript">
+  new Vue({ el: '#row1' })
+  new Vue({ el: '#row2' })
+  new Vue({ el: '#row3' })
+  new Vue({ el: '#status' })
+</script>
+  </body>
+</html>
